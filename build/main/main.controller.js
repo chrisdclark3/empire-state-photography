@@ -9,6 +9,11 @@
 
   function MainController($scope, FiveHP, $timeout, $state, $mdUtil, $mdSidenav, $rootScope, MAPS, $window) {
 
+     window.initMap = function() {
+      $rootScope.mapInitialized = true
+      $rootScope.columnCount = $window.clientWidth
+    }
+
     $scope.init = function() {
       FiveHP.initialize()
     }

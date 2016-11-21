@@ -14,7 +14,6 @@
     $scope.infoEnabled = false
 
     $scope.toggleInfo = function (value) {
-      console.log('$rootScope.currentPhoto', $rootScope.currentPhoto)
       $scope.infoEnabled = (typeof value !== 'undefined') ? value : !$scope.infoEnabled
     }
 

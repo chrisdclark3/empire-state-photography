@@ -1,10 +1,4 @@
-<md-sidenav class="md-sidenav-left"
-    md-component-id="left"
-    md-disable-backdrop
-    id="navigation"
-    md-whiteframe="4"
-    md-is-locked-open="$mdMedia('gt-sm')"
-    layout="column" layout-padding layout-fill>
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop id="navigation" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-xs')" layout="column" layout-padding layout-fill>
 
     <md-header flex>
         <logo id="logo"></logo>
@@ -13,33 +7,20 @@
     <div flex></div>
 
     <md-list class="link-list" layout="column" layout-align="start start">
-        <md-list-item class="nav-list-item">
-            <md-item-content ui-sref="app.home" class="md-list-item-text nav-text">
-                <h6 class="md-body-2">Home</h6>
-            </md-item-content>
+        <md-list-item class="nav-list-item md-body-2" ui-sref="app.home">
+            Home
         </md-list-item>
-        <md-list-item class="nav-list-item">
-            <md-item-content ui-sref="app.about" class="md-list-item-text nav-text">
-                <h6 class="md-body-2">About</h6>
-            </md-item-content>
+        <md-list-item class="nav-list-item md-body-2" ui-sref="app.about">
+            About
         </md-list-item>
-        <md-list-item class="nav-list-item">
-            <md-item-content ui-sref="app.contact" class="md-list-item-text nav-text">
-                <h6 class="md-body-2">Contact</h6>
-            </md-item-content>
+        <md-list-item class="nav-list-item md-body-2" ui-sref="app.contact">
+            Contact
         </md-list-item>
-        <md-list-item class="nav-list-item">
-            <md-item-content ui-sref="app.pricing" class="md-list-item-text nav-text">
-                <h6 class="md-body-2">Pricing</h6>
-            </md-item-content>
+        <md-list-item class="nav-list-item md-body-2" ui-sref="app.pricing">
+            Pricing
         </md-list-item>
-        <md-list-item class="nav-list-item">
-            <md-item-content id="timely" timely-button class="md-list-item-text nav-text" ng-click="bookAppointment()">
-                <md-button class="md-button md-primary">
-                Book Appointment
-                </md-button>
-            </md-item-content>
+        <md-list-item class="nav-list-item md-button md-primary md-button" id="timely" timely-button ng-click="bookAppointment()">
+            Book Appointment
         </md-list-item>
     </md-list>
 </md-sidenav>
-

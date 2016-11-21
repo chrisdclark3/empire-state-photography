@@ -14,16 +14,42 @@
       if (!SVC.initialized) {
         SVC.getPhotos().then(function(response) {
           $rootScope.photos = {}
-          $rootScope.categories = {
-            'Uncategorized' : 0,
-            'Abstract' : 10,
-            'Animals' : 11,
-            'Black and White' : 5,
-            'Celebrities' : 1,
-            'Nature' : 18
+          var categories = {
+            0: 'Uncategorized',
+            10: 'Abstract',
+            11: 'Animals',
+            5: 'Black and White',
+            1: 'Celebrities',
+            9: 'City and Architecture',
+            15: 'Commercial',
+            16: 'Concert',
+            20: 'Family',
+            14: 'Fashion',
+            2: 'Film',
+            24: 'Fine Art',
+            23: 'Food',
+            3: 'Journalism',
+            8: 'Landscapes',
+            12: 'Macro',
+            18: 'Nature',
+            4: 'Nude',
+            7: 'People',
+            19: 'Performing Arts',
+            17: 'Sport',
+            6: 'Still Life',
+            21: 'Street',
+            26: 'Transportation',
+            13: 'Travel',
+            22: 'Underwater',
+            27: 'Urban Exploration',
+            25: 'Wedding'
           }
+          $rootScope.categories = {}
           _.forEach(response.data.photos, function(photo) {
             $rootScope.photos[photo.name] = photo
+            if (typeof $rootScope.categories[photo.category] === 'undefined') {
+              $rootScope.categories[photo.category] = categories[photo.category]
+            }
           })
           $rootScope.$broadcast('setPhotos', $rootScope.photos)
         }, function(error) {})

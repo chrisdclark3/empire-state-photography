@@ -41,11 +41,6 @@
 
   function Run(MAPS, $rootScope, $state) {
 
-    window.initMap = function() {
-      $rootScope.mapInitialized = true
-      $rootScope.columnCount = $window.clientWidth
-    }
-
   }
 
 }());

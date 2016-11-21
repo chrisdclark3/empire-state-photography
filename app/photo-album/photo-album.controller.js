@@ -11,14 +11,14 @@
 
   function PhotoAlbumController($scope, $mdMedia, $mdDialog, $rootScope, $timeout, $window, FiveHP, $state, $element) {
 
-    $scope.selectedCategory = undefined
+    $scope.selectedCategories = []
 
     $scope.getSelectedText = function(key) {
-      return $scope.selectedCategory
+      return $scope.selectedCategories
     }
 
     $scope.inCategories = function(c) {
-      if ($scope.selectedCategory && (c != $scope.selectedCategory.toString())) {
+      if ($scope.selectedCategories.length > 0 && (c != $scope.selectedCategories.toString())) {
         return false
       } else {
         return true
