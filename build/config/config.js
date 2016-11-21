@@ -16,7 +16,8 @@
   Config.$inject = ['$locationProvider', '$httpProvider', '$mdThemingProvider', 'MATERIAL_DESIGN']
 
   function Config($locationProvider, $httpProvider, $mdThemingProvider, MATERIAL_DESIGN) {
-    $locationProvider.html5Mode(true)
+    $locationProvider.html5Mode(true).hashPrefix('*');
+
 
     $httpProvider.defaults.useXDomain = true
 

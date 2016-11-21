@@ -19,22 +19,22 @@
         templateUrl: "../main/main.html"
       })
       .state('app.home', {
-        url: "/home",
+        url: "^/home",
         controller: 'PhotoAlbumController',
         templateUrl: "../photo-album/photo-album.html"
       })
       .state('app.contact', {
-        url: "/contact",
+        url: "^/contact",
         controller: 'ContactController',
         templateUrl: "../contact/contact.html"
       })
       .state('app.about', {
-        url: "/about",
+        url: "^/about",
         controller: 'AboutController',
         templateUrl: "../about/about.html"
       })
       .state('app.pricing', {
-        url: "/pricing",
+        url: "^/pricing",
         controller: 'PricingController',
         templateUrl: "../pricing/pricing.html"
       })
