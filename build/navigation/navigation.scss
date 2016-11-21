@@ -1,0 +1,45 @@
+#navigation {
+  height: 100%;
+  min-width: 230px;
+  overflow: hidden;
+  z-index: 2;
+
+  #side-nav-header {
+    background-color: white;
+    font-weight: 900;
+  }
+
+  .nav-text,
+  .nav-list-item {
+    margin: 0px !important;
+    padding: 0px !important;
+    @include vendorize("margin-before", 0px !important);
+    @include vendorize("margin-after", 0px !important);
+    @include vendorize("padding-before", 0px !important);
+    @include vendorize("padding-after", 0px !important);
+    line-height: 70%;
+
+    * {
+      line-height: 70%;
+      margin: 0px !important;
+      padding: 0px !important;
+      @include vendorize("margin-before", 0px !important);
+      @include vendorize("margin-after", 0px !important);
+      @include vendorize("padding-before", 0px !important);
+      @include vendorize("padding-after", 0px !important);
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.link-list {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}

@@ -1,0 +1,41 @@
+@import "../style/angular-material-sass-files/angular-material.scss";
+@import "../fonts/font-awesome-4.6.3/scss/font-awesome.scss";
+
+
+@mixin vendorize($property, $values...) {
+  -webkit-#{$property}: $values;
+  -moz-#{$property}: $values;
+  -ms-#{$property}: $values;
+  -o-#{$property}: $values;
+  #{$property}: $values;
+}
+
+
+html, body, #main {
+  height: 100%;
+}
+
+#main {
+  overflow: hidden;
+
+  #content-view {
+    height: 100%;
+    padding: 2em !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+  }
+}
+
+.menu-button-toggle {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+@import "../fonts/fonts.scss";
+@import "../photo-album/photo-album.scss";
+@import "../navigation/navigation.scss";
+@import "../logo/logo.scss";
+@import "../contact/contact.scss";
+@import "../about/about.scss";
+@import "../pricing/pricing.scss";

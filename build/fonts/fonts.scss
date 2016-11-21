@@ -1,0 +1,74 @@
+@import '../fonts/metropolis.scss';
+
+.md-display-1,
+.md-display-2,
+.md-display-3,
+.md-display-4 {
+  opacity: 54%;
+}
+
+.md-headline,
+.md-title,
+.md-subhead,
+.md-body-2,
+.md-body-1 {
+  opacity: 87%;
+}
+
+.md-caption {
+  opacity: 54%;
+}
+
+.md-button {
+  opacity: 87%;
+}
+
+.condensed {
+  @include vendorize(margin-before, 0.1em);
+  @include vendorize(margin-after, 0.1em);
+  @include vendorize(padding-before, 0.1em);
+  @include vendorize(padding-after, 0.1em);
+}
+
+body {
+  font-family: "Metropolis";
+
+  * {
+    font-family: "Metropolis";
+    line-height: 100% !important;
+  }
+
+}
+
+h1 {
+  @extend .metropolis-900;
+}
+
+h2 {
+  @extend .metropolis-800;
+}
+
+h3 {
+  @extend .metropolis-700;
+}
+
+h4 {
+  @extend .metropolis-600;
+}
+
+h5 {
+  @extend .metropolis-500;
+}
+
+h6 {
+  @extend .metropolis-400;
+}
+
+p {
+  @extend .metropolis-300;
+}
+
+p.md-body-2 {
+  @extend .metropolis-400;
+  font-weight: bold;
+}

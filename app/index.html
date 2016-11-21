@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- inject:app:css -->
+    <!-- endinject -->
+
+    <!-- inject:vendor:js -->
+    <!-- endinject -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4GZxpNOG7cjZzmYdEKm9CgwXYlrdyS1o&callback=initMap"></script>
+  </head>
+  <body ng-controller="MainController">
+    <script id="timelyScript" src="//book.gettimely.com/widget/book-button-v1.3.js"></script>
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- inject:app:js -->
+    <!-- endinject -->
+
+      <div ui-view id="app-container" layout-fill></div>
+
+  </body>
+</html>
+

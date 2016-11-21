@@ -1,0 +1,25 @@
+#photo-album {
+  height: 100% !important;
+  min-width: calc(80vh - 240px) !important;
+
+  .photo-tile {
+    @include vendorize(filter, grayscale(100%))
+    &:hover {
+      @include vendorize(filter, grayscale(0%))
+    }
+  }
+}
+
+#dialog-photo {
+  overflow: hidden;
+}
+
+.info-buttons {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#category-filter {
+  min-width: 200px;
+}

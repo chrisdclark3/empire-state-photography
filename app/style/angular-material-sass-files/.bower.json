@@ -1,0 +1,34 @@
+{
+  "name": "angular-material-sass-files",
+  "description": "The sass files of the angular-material repository",
+  "version": "1.0.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johannesjo/angular-material-sass-files.git"
+  },
+  "license": "MIT",
+  "main": "angular-material.scss",
+  "keywords": [
+    "angular",
+    "AngularJS",
+    "material design",
+    "angular material",
+    "scss",
+    "sass"
+  ],
+  "ignore": [
+    "create-files.sh",
+    ".gitignore"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/johannesjo/angular-material-sass-files",
+  "_release": "1.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.5",
+    "commit": "ea1cebf9aa8358e9099fbb7f191ef1bb5014c4f8"
+  },
+  "_source": "https://github.com/johannesjo/angular-material-sass-files.git",
+  "_target": "1.0.5",
+  "_originalSource": "angular-material-sass-files"
+}

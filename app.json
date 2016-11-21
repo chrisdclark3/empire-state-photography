@@ -1,0 +1,6 @@
+{
+  "name": "Empire State Photography",
+  "description": "Empire State Photography Website",
+  "repository": "https://github.com/chrisdclark3/empire-state-photography",
+  "keywords": ["node", "express", "static"]
+}
