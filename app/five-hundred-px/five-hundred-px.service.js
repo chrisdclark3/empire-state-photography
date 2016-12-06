@@ -13,7 +13,6 @@
     SVC.initialize = function() {
       if (!$rootScope.photosInitialized) {
         SVC.getPhotos().then(function(response) {
-          console.log('500px > initialize > response', response)
           $rootScope.photos = {}
           $rootScope.keyWords = {}
           _.forEach(response.data.photos, function(photo) {
@@ -25,7 +24,6 @@
     }
 
     SVC.getFullPhoto = function(photo) {
-      console.log('getFullPhoto > photo', photo)
       return $http({
         method: 'GET',
         url: 'https://api.500px.com/v1/photos/' + photo.id,

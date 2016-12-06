@@ -9,7 +9,6 @@
     return {
       restrict: 'A',
       link: function(scope) {
-        console.log('timely directive compiled!')
 
         scope.bookAppointment = function() {
           var bookingButton = new timelyButton('empirestatephotography1', {
