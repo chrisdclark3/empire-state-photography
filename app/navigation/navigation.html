@@ -1,10 +1,7 @@
-<md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop id="navigation" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-xs')" layout="column" layout-padding layout-fill>
-
-    <md-header flex>
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop id="navigation" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-xs')" layout="column" layout-padding layout-fill layout-align="start start">
+    <md-content>
         <logo id="logo"></logo>
-    </md-header>
-
-    <div flex></div>
+    </md-content>
 
     <md-list class="link-list" layout="column" layout-align="start start">
         <md-list-item class="nav-list-item md-body-2" ui-sref="app.home">
@@ -19,8 +16,9 @@
         <md-list-item class="nav-list-item md-body-2" ui-sref="app.pricing">
             Pricing
         </md-list-item>
-        <md-list-item class="nav-list-item md-button md-primary md-button" id="timely" timely-button ng-click="bookAppointment()">
+        <md-list-item class="nav-list-item md-button md-primary md-button booking-button" id="timely" timely-button ng-click="bookAppointment()">
             Book Appointment
         </md-list-item>
     </md-list>
+    <div flex></div>
 </md-sidenav>

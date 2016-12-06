@@ -10,6 +10,8 @@
   #{$property}: $values;
 }
 
+$primary: #03659b;
+
 
 html, body, #main {
   height: 100%;
@@ -20,9 +22,9 @@ html, body, #main {
 
   #content-view {
     height: 100%;
-    padding: 2em !important;
     overflow-y: scroll !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    padding-left: 25px;
   }
 }
 
@@ -33,9 +35,9 @@ html, body, #main {
 }
 
 @import "../fonts/fonts.scss";
-@import "../photo-album/photo-album.scss";
 @import "../navigation/navigation.scss";
 @import "../logo/logo.scss";
 @import "../contact/contact.scss";
 @import "../about/about.scss";
 @import "../pricing/pricing.scss";
+@import "../photo-album/photo-album.scss";

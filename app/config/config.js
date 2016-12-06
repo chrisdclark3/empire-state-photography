@@ -18,7 +18,6 @@
   function Config($locationProvider, $httpProvider, $mdThemingProvider, MATERIAL_DESIGN) {
     $locationProvider.html5Mode(true).hashPrefix('*');
 
-
     $httpProvider.defaults.useXDomain = true
 
     $mdThemingProvider.definePalette('empirePrimary', MATERIAL_DESIGN.PRIMARY)

@@ -27,7 +27,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">11.11% </span>
@@ -110,36 +110,7 @@
 65
 66
 67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+68</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,54 +120,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -211,6 +151,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -243,50 +185,18 @@
 &nbsp;
 <span class="fstat-no" title="function not covered" >  function FiveHPService($timeout, $q, $http, $rootScope, FIVE_HUNDRED_PX, $mdMedia) {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var SVC = {</span>
-      initialized: false
-    }
+<span class="cstat-no" title="statement not covered" >    var SVC = {}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    $rootScope.photoAlbumInitialized = false</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    SVC.initialize = <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (!SVC.initialized) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!$rootScope.photosInitialized) {</span>
 <span class="cstat-no" title="statement not covered" >        SVC.getPhotos().then(<span class="fstat-no" title="function not covered" >function(response) {</span></span>
+<span class="cstat-no" title="statement not covered" >          console.log('500px &gt; initialize &gt; response', response)</span>
 <span class="cstat-no" title="statement not covered" >          $rootScope.photos = {}</span>
-<span class="cstat-no" title="statement not covered" >          var categories = {</span>
-            0: 'Uncategorized',
-            10: 'Abstract',
-            11: 'Animals',
-            5: 'Black and White',
-            1: 'Celebrities',
-            9: 'City and Architecture',
-            15: 'Commercial',
-            16: 'Concert',
-            20: 'Family',
-            14: 'Fashion',
-            2: 'Film',
-            24: 'Fine Art',
-            23: 'Food',
-            3: 'Journalism',
-            8: 'Landscapes',
-            12: 'Macro',
-            18: 'Nature',
-            4: 'Nude',
-            7: 'People',
-            19: 'Performing Arts',
-            17: 'Sport',
-            6: 'Still Life',
-            21: 'Street',
-            26: 'Transportation',
-            13: 'Travel',
-            22: 'Underwater',
-            27: 'Urban Exploration',
-            25: 'Wedding'
-          }
-<span class="cstat-no" title="statement not covered" >          $rootScope.categories = {}</span>
+<span class="cstat-no" title="statement not covered" >          $rootScope.keyWords = {}</span>
 <span class="cstat-no" title="statement not covered" >          _.forEach(response.data.photos, <span class="fstat-no" title="function not covered" >function(photo) {</span></span>
-<span class="cstat-no" title="statement not covered" >            $rootScope.photos[photo.name] = photo</span>
-<span class="cstat-no" title="statement not covered" >            if (typeof $rootScope.categories[photo.category] === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >              $rootScope.categories[photo.category] = categories[photo.category]</span>
-            }
+<span class="cstat-no" title="statement not covered" >            $rootScope.photos[photo.id] = photo</span>
           })
 <span class="cstat-no" title="statement not covered" >          $rootScope.$broadcast('setPhotos', $rootScope.photos)</span>
         }, <span class="fstat-no" title="function not covered" >function(error) {</span>})
@@ -294,13 +204,14 @@
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    SVC.getFullPhoto = <span class="fstat-no" title="function not covered" >function(photo) {</span></span>
+<span class="cstat-no" title="statement not covered" >      console.log('getFullPhoto &gt; photo', photo)</span>
 <span class="cstat-no" title="statement not covered" >      return $http({</span>
         method: 'GET',
         url: 'https://api.500px.com/v1/photos/' + photo.id,
         params: {
           consumer_key: FIVE_HUNDRED_PX.KEY,
           image_size: 4,
-          username: 'chrisdclark3'
+          username: 'bookings11'
         }
       })
     }
@@ -308,7 +219,9 @@
 <span class="cstat-no" title="statement not covered" >    SVC.getPhotos = <span class="fstat-no" title="function not covered" >function(vals) {</span></span>
 <span class="cstat-no" title="statement not covered" >      var params = {</span>
         consumer_key: FIVE_HUNDRED_PX.KEY,
+        rpp: 100,
         image_size: 440,
+        tags: 1,
         username: FIVE_HUNDRED_PX.USERNAME
       }
 <span class="cstat-no" title="statement not covered" >      if (typeof vals !== 'undefined') {</span>
@@ -337,7 +250,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Nov 20 2016 17:14:12 GMT-0800 (PST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Dec 05 2016 20:17:08 GMT-0800 (PST)
 </div>
 </div>
 <script src="../prettify.js"></script>

@@ -1,22 +1,31 @@
-<div id="photo-album" class="md-primary" layout="column" layout-fill>
-    <div layout="column" layout-fill>
-        <div id="category-filter">
-            <div layout="row" layout-fill>
-                <md-input-container>
-                    <label>Categories</label>
-                    <md-select ng-model="selectedCategories" multiple>
-                        <md-optgroup label="Categories">
-                            <md-option ng-value="key" ng-repeat="(key, category) in categories">{{ category }}</md-option>
-                        </md-optgroup>
-                    </md-select>
-                </md-input-container>
-            </div>
-        </div>
-
-        <md-grid-list md-cols="{{ columnCount }}" md-row-height="1:1" md-gutter="20px" layout="column" layout-fill>
-            <md-grid-tile ng-repeat="(id, photo) in photos" md-rowspan="{{ photo.rowSpan }}" md-colspan="{{ photo.colSpan }}" class="photo-tile" ng-if="inCategories(photo.category)">
+<md-content id="photo-album" class="md-primary" layout="column" layout-fill>
+    <md-content>
+        <form class="key-word-wrapper" ng-submit="$event.preventDefault()" layout-padding layout-margin>
+            <md-chips
+                ng-model="keyWordSearch.selectedKeyWords"
+                readonly="false"
+                md-removable="true"
+                delete-button-label="Remove"
+                delete-hint="Click to delete">
+                <md-autocomplete class="key-word-search" ng-disabled="false" md-selected-item="keyWordSearch.selectedItem" md-search-text="keyWordSearch.searchText" md-search-text-change="keyWordSearch.searchTextChange(item)" md-selected-item-change="keyWordSearch.selectedItemChange(item)" md-items="item in keyWordSearch.query(keyWordSearch.searchText)" md-item-text="item.name" placeholder="Search by keyword">
+                    <span class="filter-text" md-highlight-text="keyWordSearch.searchText">{{item.value}}</span>
+                </md-autocomplete>
+                <md-chip-template>
+                    <span class="filter-text">
+                        {{ $chip.value }} ({{ $chip.photos.length }})
+                    </span>
+                </md-chip-template>
+                <button md-chip-remove class="md-primary remove-chip-button" ng-click="removeChip($chip)">
+                    <md-icon md-svg-icon="md-close"></md-icon>
+                </button>
+            </md-chips>
+        </form>
+    </md-content>
+    <md-content flex>
+        <md-grid-list md-cols="{{ columnCount }}" md-row-height="1:1" md-gutter="20px" layout="column">
+            <md-grid-tile ng-repeat="(id, photo) in selectedPhotos" md-rowspan="{{ photo.rowSpan }}" md-colspan="{{ photo.colSpan }}" class="photo-tile">
                 <img class="photo-image" ng-src="{{ photo.image_url }}" style="height: {{ photo.scaledH }}; width: {{ photo.scaledW }};" layout-fill ng-click="showInfo($event, photo)" id="{{ photo.id }}">
             </md-grid-tile>
         </md-grid-list>
-    </div>
-</div>
+    </md-content>
+</md-content>

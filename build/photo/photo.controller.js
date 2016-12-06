@@ -13,10 +13,6 @@
     $scope.currentPhoto.display_url = $scope.currentPhoto.image_url
     $scope.infoEnabled = false
 
-    $scope.toggleInfo = function (value) {
-      $scope.infoEnabled = (typeof value !== 'undefined') ? value : !$scope.infoEnabled
-    }
-
     $scope.hide = function() {
       $mdDialog.hide()
     }

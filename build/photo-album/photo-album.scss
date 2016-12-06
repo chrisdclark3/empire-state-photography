@@ -1,5 +1,4 @@
 #photo-album {
-  height: 100% !important;
   min-width: calc(80vh - 240px) !important;
 
   .photo-tile {
@@ -9,6 +8,7 @@
     }
   }
 }
+
 
 #dialog-photo {
   overflow: hidden;
@@ -20,6 +20,27 @@
   left: 5px;
 }
 
-#category-filter {
-  min-width: 200px;
+.md-chip-content {
+
+  .filter-text {
+
+  }
 }
+
+.md-chips {
+    .filter-text {
+      line-height: 200% !important;
+    }
+}
+
+.remove-chip-button {
+  margin-left: 16px !important;
+  padding-left: 16px !important;
+  margin-top: 2px !important;
+
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 50%;
+  color: black;
+}
+

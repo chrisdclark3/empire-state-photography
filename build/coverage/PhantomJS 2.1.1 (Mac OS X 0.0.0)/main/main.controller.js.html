@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">10% </span>
+        <span class="strong">22.22% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/40</span>
+        <span class='fraction'>4/18</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">7.69% </span>
+        <span class="strong">14.29% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/13</span>
+        <span class='fraction'>1/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">10% </span>
+        <span class="strong">22.22% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/40</span>
+        <span class='fraction'>4/18</span>
       </div>
     </div>
   </div>
@@ -91,44 +91,7 @@
 46
 47
 48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+49</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
@@ -144,19 +107,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -184,30 +134,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -223,19 +149,6 @@
   MainController.$inject = ['$scope', 'FiveHP', '$timeout', '$state', '$mdUtil', '$mdSidenav', '$rootScope', 'MAPS', '$window'];
 &nbsp;
 <span class="fstat-no" title="function not covered" >  function MainController($scope, FiveHP, $timeout, $state, $mdUtil, $mdSidenav, $rootScope, MAPS, $window) {</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >     window.initMap = <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >      $rootScope.mapInitialized = true</span>
-<span class="cstat-no" title="statement not covered" >      $rootScope.columnCount = $window.clientWidth</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    $scope.init = <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >      FiveHP.initialize()</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof $rootScope.photoAlbumInitialized === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      $scope.init()</span>
-    }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    $scope.toggleMenu = <span class="fstat-no" title="function not covered" >function(navID) {</span></span>
 <span class="cstat-no" title="statement not covered" >      return $mdUtil.debounce(<span class="fstat-no" title="function not covered" >function() {</span></span>
@@ -271,30 +184,6 @@
         });
       }
     }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    $scope.sizePhotos = <span class="fstat-no" title="function not covered" >function(photos) {</span></span>
-<span class="cstat-no" title="statement not covered" >      var el = angular.element(document.getElementById('content-view'))</span>
-<span class="cstat-no" title="statement not covered" >      $rootScope.columnCount = el[0].clientWidth</span>
-<span class="cstat-no" title="statement not covered" >      _.forEach($rootScope.photos, <span class="fstat-no" title="function not covered" >function(photo, idx) {</span></span>
-<span class="cstat-no" title="statement not covered" >        photo.ratio = 1</span>
-<span class="cstat-no" title="statement not covered" >        photo.colSpan = ($rootScope.columnCount / 3)</span>
-<span class="cstat-no" title="statement not covered" >        photo.rowSpan = photo.ratio * photo.colSpan</span>
-<span class="cstat-no" title="statement not covered" >        photo.scaledW = photo.rowSpan</span>
-<span class="cstat-no" title="statement not covered" >        photo.scaledH = photo.colSpan</span>
-&nbsp;
-      })
-<span class="cstat-no" title="statement not covered" >      $rootScope.photoAlbumInitialized = true</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    $rootScope.$on('setPhotos', <span class="fstat-no" title="function not covered" >function(e, photos) {</span></span>
-<span class="cstat-no" title="statement not covered" >      $scope.sizePhotos(photos)</span>
-    })
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    $window.addEventListener('resize', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >      if ($state.current.name === 'app.home') {</span>
-<span class="cstat-no" title="statement not covered" >        $scope.sizePhotos($rootScope.photos)</span>
-      }
-    })
   }
 &nbsp;
 }());
@@ -304,7 +193,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Nov 20 2016 17:14:12 GMT-0800 (PST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Dec 05 2016 20:17:08 GMT-0800 (PST)
 </div>
 </div>
 <script src="../prettify.js"></script>

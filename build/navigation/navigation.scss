@@ -12,22 +12,18 @@
   .nav-text,
   .nav-list-item {
     margin: 0px !important;
-    padding: 0px !important;
     @include vendorize("margin-before", 0px !important);
     @include vendorize("margin-after", 0px !important);
     @include vendorize("padding-before", 0px !important);
     @include vendorize("padding-after", 0px !important);
-    line-height: 70%;
-
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 70% !important;
+    min-height: auto;
     * {
-      line-height: 70%;
-      margin: 0px !important;
       padding: 0px !important;
-      @include vendorize("margin-before", 0px !important);
-      @include vendorize("margin-after", 0px !important);
-      @include vendorize("padding-before", 0px !important);
-      @include vendorize("padding-after", 0px !important);
-      text-transform: capitalize;
+      margin: 0px !important;
+      min-height: auto;
     }
 
     &:hover {
@@ -35,11 +31,10 @@
     }
 
   }
+  #timely {
+    border: 1px solid $primary;
+    font-weight: bold;
+  }
 
 }
 
-.link-list {
-  position: absolute;
-  bottom: 1em;
-  left: 1em;
-}

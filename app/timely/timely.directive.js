@@ -13,7 +13,7 @@
 
         scope.bookAppointment = function() {
           var bookingButton = new timelyButton('empirestatephotography1', {
-            "product": "452271:SV",
+            "product":"485025:SV",
             "dontCreateButton": true
           })
           bookingButton.start()

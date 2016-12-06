@@ -16528,9 +16528,9 @@ html, body, #main {
   overflow: hidden; }
   #main #content-view {
     height: 100%;
-    padding: 2em !important;
     overflow-y: scroll !important;
-    overflow-x: hidden; }
+    overflow-x: hidden !important;
+    padding-left: 25px; }
 
 .menu-button-toggle {
   position: absolute;
@@ -16783,40 +16783,12 @@ Metropolis
   padding-after: 0.1em; }
 
 body {
-  font-family: "Metropolis"; }
+  font-family: "Metropolis" !important; }
   body * {
-    font-family: "Metropolis";
-    line-height: 100% !important; }
+    font-family: "Metropolis" !important; }
 
 p.md-body-2 {
   font-weight: bold; }
-
-#photo-album {
-  height: 100% !important;
-  min-width: calc(80vh - 240px) !important; }
-  #photo-album .photo-tile {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
-    #photo-album .photo-tile:hover {
-      -webkit-filter: grayscale(0%);
-      -moz-filter: grayscale(0%);
-      -ms-filter: grayscale(0%);
-      -o-filter: grayscale(0%);
-      filter: grayscale(0%); }
-
-#dialog-photo {
-  overflow: hidden; }
-
-.info-buttons {
-  position: absolute;
-  top: 5px;
-  left: 5px; }
-
-#category-filter {
-  min-width: 200px; }
 
 #navigation {
   height: 100%;
@@ -16829,7 +16801,6 @@ p.md-body-2 {
   #navigation .nav-text,
   #navigation .nav-list-item {
     margin: 0px !important;
-    padding: 0px !important;
     -webkit-margin-before: 0px !important;
     -moz-margin-before: 0px !important;
     -ms-margin-before: 0px !important;
@@ -16850,50 +16821,28 @@ p.md-body-2 {
     -ms-padding-after: 0px !important;
     -o-padding-after: 0px !important;
     padding-after: 0px !important;
-    line-height: 70%; }
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 70% !important;
+    min-height: auto; }
     #navigation .nav-text *,
     #navigation .nav-list-item * {
-      line-height: 70%;
-      margin: 0px !important;
       padding: 0px !important;
-      -webkit-margin-before: 0px !important;
-      -moz-margin-before: 0px !important;
-      -ms-margin-before: 0px !important;
-      -o-margin-before: 0px !important;
-      margin-before: 0px !important;
-      -webkit-margin-after: 0px !important;
-      -moz-margin-after: 0px !important;
-      -ms-margin-after: 0px !important;
-      -o-margin-after: 0px !important;
-      margin-after: 0px !important;
-      -webkit-padding-before: 0px !important;
-      -moz-padding-before: 0px !important;
-      -ms-padding-before: 0px !important;
-      -o-padding-before: 0px !important;
-      padding-before: 0px !important;
-      -webkit-padding-after: 0px !important;
-      -moz-padding-after: 0px !important;
-      -ms-padding-after: 0px !important;
-      -o-padding-after: 0px !important;
-      padding-after: 0px !important;
-      text-transform: capitalize; }
+      margin: 0px !important;
+      min-height: auto; }
     #navigation .nav-text:hover,
     #navigation .nav-list-item:hover {
       cursor: pointer; }
-
-.link-list {
-  position: absolute;
-  bottom: 1em;
-  left: 1em; }
+  #navigation #timely {
+    border: 1px solid #03659b;
+    font-weight: bold; }
 
 #logo img {
   width: 200px; }
 
 #contact #map {
   height: 350px;
-  width: 450px;
-  border: 1px solid black;
-  border-opacity: 0.7; }
+  width: 450px; }
 
 #contact .divider {
   margin-top: 1em;
@@ -16916,3 +16865,38 @@ p.md-body-2 {
     background-color: #bdbdbd; }
   #pricing .bullets p {
     text-indent: -1.0rem; }
+
+#photo-album {
+  min-width: calc(80vh - 240px) !important; }
+  #photo-album .photo-tile {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    #photo-album .photo-tile:hover {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: grayscale(0%); }
+
+#dialog-photo {
+  overflow: hidden; }
+
+.info-buttons {
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+.md-chips .filter-text {
+  line-height: 200% !important; }
+
+.remove-chip-button {
+  margin-left: 16px !important;
+  padding-left: 16px !important;
+  margin-top: 2px !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 50%;
+  color: black; }

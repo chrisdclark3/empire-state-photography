@@ -9,7 +9,8 @@
       USERNAME: 'bookings11',
       KEY: '8u516zh8EMeRBrlCI9YLKxYAXzaPCJygkUmb56el',
       SECRET: '6MQrl91LfyrQ5CUsUbIKiqbPm2DYToWV0fjM8INs',
-      JS_SDK_KEY: 'f27b8afe926ca5521d1c612b2010300a5607404f'
+      JS_SDK_KEY: 'f27b8afe926ca5521d1c612b2010300a5607404f',
+      PAGE_SIZE: 20
     })
     .constant('MAPS', {
       API_KEY: 'AIzaSyA4GZxpNOG7cjZzmYdEKm9CgwXYlrdyS1o',
