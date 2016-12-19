@@ -13,7 +13,7 @@
       PAGE_SIZE: 20
     })
     .constant('MAPS', {
-      API_KEY: 'AIzaSyA4GZxpNOG7cjZzmYdEKm9CgwXYlrdyS1o',
+      API_KEY: 'AIzaSyA-1x6MJ7g8M2HaAA7YVXGjLSOVWpaKKlg',
       CENTER: {
         LAT: 51.865382,
         LNG: -2.246484
