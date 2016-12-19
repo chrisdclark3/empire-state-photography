@@ -19,7 +19,9 @@
       'photo.controller',
       'logo.directive',
       'disclaimer.directive',
-      'es-headline.directive'
+      'es-headline.directive',
+      'terms-and-conditions.controller',
+      'privacy-policy.controller'
     ]);
 
 }());

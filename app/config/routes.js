@@ -38,6 +38,16 @@
         controller: 'PricingController',
         templateUrl: "../pricing/pricing.html"
       })
+      .state('app.terms-and-conditions', {
+        url: "^/terms-and-conditions",
+        controller: 'TermsAndConditionsController',
+        templateUrl: "../terms-and-conditions/terms-and-conditions.html"
+      })
+      .state('app.privacy-policy', {
+        url: "^/privacy-policy",
+        controller: 'PrivacyPolicyController',
+        templateUrl: "../privacy-policy/privacy-policy.html"
+      })
 
   }
 

@@ -16849,23 +16849,6 @@ p.md-body-2 {
   margin-bottom: 1em;
   color: black; }
 
-#pricing .bullets {
-  padding-left: 1.5em; }
-  #pricing .bullets .bullet::before {
-    display: inline-block;
-    content: '';
-    -webkit-border-radius: 0.175rem;
-    -moz-border-radius: 0.175rem;
-    -ms-border-radius: 0.175rem;
-    -o-border-radius: 0.175rem;
-    border-radius: 0.175rem;
-    height: 0.25rem;
-    width: 0.25rem;
-    margin-right: 0.5rem;
-    background-color: #bdbdbd; }
-  #pricing .bullets p {
-    text-indent: -1.0rem; }
-
 #photo-album {
   min-width: calc(80vh - 240px) !important; }
   #photo-album .photo-tile {
@@ -16900,3 +16883,20 @@ p.md-body-2 {
   border: none !important;
   border-radius: 50%;
   color: black; }
+
+.bullets {
+  padding-left: 1.5em; }
+  .bullets .bullet::before {
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.175rem;
+    -moz-border-radius: 0.175rem;
+    -ms-border-radius: 0.175rem;
+    -o-border-radius: 0.175rem;
+    border-radius: 0.175rem;
+    height: 0.25rem;
+    width: 0.25rem;
+    margin-right: 0.5rem;
+    background-color: #bdbdbd; }
+  .bullets p {
+    text-indent: -1.0rem; }
